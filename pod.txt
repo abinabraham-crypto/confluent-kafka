@@ -1,0 +1,15 @@
+$ cat testclient.yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testclient
+  namespace: kafka
+spec:
+  containers:
+  - name: kafka
+    image: solsson/kafka:0.11.0.0
+    command:
+      - sh
+      - -c
+      - "exec tail -f /dev/null"
+$ kubectl apply -f testclient
