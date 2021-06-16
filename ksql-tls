@@ -1,0 +1,2 @@
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /data/kafka/tls.key -out /data/kafka/tls.crt -subj "/CN=ksql.apps-int-dev.barwabank.local"
+kubectl -n dev-confluent-cluster create secret tls ksql-tls --key /data/kafka/tls.key --cert /data/kafka/tls.crt
