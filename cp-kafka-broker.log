@@ -1,0 +1,1893 @@
++ export KAFKA_BROKER_ID=2
++ KAFKA_BROKER_ID=2
++ export KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://dev-confluent-cp-kafka-2.dev-confluent-cp-kafka-headless.dev-confluent-cluster:9092,EXTERNAL://10.0.204.18:31092
++ KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://dev-confluent-cp-kafka-2.dev-confluent-cp-kafka-headless.dev-confluent-cluster:9092,EXTERNAL://10.0.204.18:31092
++ exec /etc/confluent/docker/run
+===> User
+uid=0(root) gid=0(root) groups=0(root)
+===> Configuring ...
+===> Running preflight checks ... 
+===> Check if /var/lib/kafka/data is writable ...
+===> Check if Zookeeper is healthy ...
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.5.8-f439ca583e70862c3068a1f2a7d4d068eec33315, built on 05/04/2020 15:53 GMT
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:host.name=dev-confluent-cp-kafka-2.dev-confluent-cp-kafka-headless.dev-confluent-cluster.svc.cluster.local
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.version=11.0.10
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Azul Systems, Inc.
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.home=/usr/lib/jvm/zulu11-ca
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/usr/share/java/cp-base-new/argparse4j-0.7.0.jar:/usr/share/java/cp-base-new/audience-annotations-0.5.0.jar:/usr/share/java/cp-base-new/common-utils-6.1.0.jar:/usr/share/java/cp-base-new/commons-cli-1.4.jar:/usr/share/java/cp-base-new/gson-2.8.6.jar:/usr/share/java/cp-base-new/jackson-annotations-2.10.5.jar:/usr/share/java/cp-base-new/jackson-core-2.10.5.jar:/usr/share/java/cp-base-new/jackson-databind-2.10.5.1.jar:/usr/share/java/cp-base-new/jackson-dataformat-csv-2.10.5.jar:/usr/share/java/cp-base-new/jackson-dataformat-yaml-2.10.5.jar:/usr/share/java/cp-base-new/jackson-datatype-jdk8-2.10.5.jar:/usr/share/java/cp-base-new/jackson-module-paranamer-2.10.5.jar:/usr/share/java/cp-base-new/jackson-module-scala_2.13-2.10.5.jar:/usr/share/java/cp-base-new/jopt-simple-5.0.4.jar:/usr/share/java/cp-base-new/kafka-clients-6.1.0-ccs.jar:/usr/share/java/cp-base-new/kafka-raft-6.1.0-ccs.jar:/usr/share/java/cp-base-new/kafka_2.13-6.1.0-ccs.jar:/usr/share/java/cp-base-new/lz4-java-1.7.1.jar:/usr/share/java/cp-base-new/metrics-core-2.2.0.jar:/usr/share/java/cp-base-new/netty-buffer-4.1.48.Final.jar:/usr/share/java/cp-base-new/netty-codec-4.1.48.Final.jar:/usr/share/java/cp-base-new/netty-common-4.1.48.Final.jar:/usr/share/java/cp-base-new/netty-handler-4.1.48.Final.jar:/usr/share/java/cp-base-new/netty-resolver-4.1.48.Final.jar:/usr/share/java/cp-base-new/netty-transport-4.1.48.Final.jar:/usr/share/java/cp-base-new/netty-transport-native-epoll-4.1.48.Final.jar:/usr/share/java/cp-base-new/netty-transport-native-unix-common-4.1.48.Final.jar:/usr/share/java/cp-base-new/paranamer-2.8.jar:/usr/share/java/cp-base-new/scala-collection-compat_2.13-2.2.0.jar:/usr/share/java/cp-base-new/scala-java8-compat_2.13-0.9.1.jar:/usr/share/java/cp-base-new/scala-library-2.13.3.jar:/usr/share/java/cp-base-new/scala-logging_2.13-3.9.2.jar:/usr/share/java/cp-base-new/scala-reflect-2.13.3.jar:/usr/share/java/cp-base-new/slf4j-api-1.7.30.jar:/usr/share/java/cp-base-new/slf4j-simple-1.7.30.jar:/usr/share/java/cp-base-new/snakeyaml-1.26.jar:/usr/share/java/cp-base-new/snappy-java-1.1.7.7.jar:/usr/share/java/cp-base-new/utility-belt-6.1.0.jar:/usr/share/java/cp-base-new/zookeeper-3.5.8.jar:/usr/share/java/cp-base-new/zookeeper-jute-3.5.8.jar:/usr/share/java/cp-base-new/zstd-jni-1.4.5-6.jar
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/tmp
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.name=Linux
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.version=5.3.18-24.49-default
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.name=root
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.home=/root
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/home/appuser
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.free=233MB
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.max=3860MB
+[main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.memory.total=241MB
+[main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=dev-confluent-cp-zookeeper-headless:2181 sessionTimeout=40000 watcher=io.confluent.admin.utils.ZookeeperConnectionWatcher@3b084709
+[main] INFO org.apache.zookeeper.common.X509Util - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+[main] INFO org.apache.zookeeper.ClientCnxnSocket - jute.maxbuffer value is 4194304 Bytes
+[main] INFO org.apache.zookeeper.ClientCnxn - zookeeper.request.timeout value is 0. feature enabled=
+[main-SendThread(dev-confluent-cp-zookeeper-headless:2181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server dev-confluent-cp-zookeeper-headless/10.42.77.93:2181. Will not attempt to authenticate using SASL (unknown error)
+[main-SendThread(dev-confluent-cp-zookeeper-headless:2181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established, initiating session, client: /10.42.142.31:56576, server: dev-confluent-cp-zookeeper-headless/10.42.77.93:2181
+[main-SendThread(dev-confluent-cp-zookeeper-headless:2181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server dev-confluent-cp-zookeeper-headless/10.42.77.93:2181, sessionid = 0x20051fa439c0008, negotiated timeout = 40000
+[main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x20051fa439c0008 closed
+[main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x20051fa439c0008
+===> Launching ... 
+===> Launching kafka ... 
+[2021-06-16 11:29:06,769] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2021-06-16 11:29:07,088] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[2021-06-16 11:29:07,150] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2021-06-16 11:29:07,153] INFO starting (kafka.server.KafkaServer)
+[2021-06-16 11:29:07,153] INFO Connecting to zookeeper on dev-confluent-cp-zookeeper-headless:2181 (kafka.server.KafkaServer)
+[2021-06-16 11:29:07,171] INFO [ZooKeeperClient Kafka server] Initializing a new session to dev-confluent-cp-zookeeper-headless:2181. (kafka.zookeeper.ZooKeeperClient)
+[2021-06-16 11:29:07,177] INFO Client environment:zookeeper.version=3.5.8-f439ca583e70862c3068a1f2a7d4d068eec33315, built on 05/04/2020 15:53 GMT (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:host.name=dev-confluent-cp-kafka-2.dev-confluent-cp-kafka-headless.dev-confluent-cluster.svc.cluster.local (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:java.version=11.0.10 (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:java.vendor=Azul Systems, Inc. (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:java.home=/usr/lib/jvm/zulu11-ca (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:java.class.path=/usr/bin/../share/java/kafka/activation-1.1.1.jar:/usr/bin/../share/java/kafka/aopalliance-repackaged-2.6.1.jar:/usr/bin/../share/java/kafka/argparse4j-0.7.0.jar:/usr/bin/../share/java/kafka/audience-annotations-0.5.0.jar:/usr/bin/../share/java/kafka/commons-cli-1.4.jar:/usr/bin/../share/java/kafka/commons-lang3-3.8.1.jar:/usr/bin/../share/java/kafka/confluent-log4j-1.2.17-cp2.jar:/usr/bin/../share/java/kafka/connect-api-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/connect-basic-auth-extension-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/connect-file-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/connect-json-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/connect-mirror-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/connect-mirror-client-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/connect-runtime-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/connect-transforms-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/hk2-api-2.6.1.jar:/usr/bin/../share/java/kafka/hk2-locator-2.6.1.jar:/usr/bin/../share/java/kafka/hk2-utils-2.6.1.jar:/usr/bin/../share/java/kafka/jackson-annotations-2.10.5.jar:/usr/bin/../share/java/kafka/jackson-core-2.10.5.jar:/usr/bin/../share/java/kafka/jackson-databind-2.10.5.1.jar:/usr/bin/../share/java/kafka/jackson-dataformat-csv-2.10.5.jar:/usr/bin/../share/java/kafka/jackson-datatype-jdk8-2.10.5.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-base-2.10.5.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-json-provider-2.10.5.jar:/usr/bin/../share/java/kafka/jackson-module-jaxb-annotations-2.10.5.jar:/usr/bin/../share/java/kafka/jackson-module-paranamer-2.10.5.jar:/usr/bin/../share/java/kafka/jackson-module-scala_2.13-2.10.5.jar:/usr/bin/../share/java/kafka/jakarta.activation-api-1.2.1.jar:/usr/bin/../share/java/kafka/jakarta.annotation-api-1.3.5.jar:/usr/bin/../share/java/kafka/jakarta.inject-2.6.1.jar:/usr/bin/../share/java/kafka/jakarta.validation-api-2.0.2.jar:/usr/bin/../share/java/kafka/jakarta.ws.rs-api-2.1.6.jar:/usr/bin/../share/java/kafka/jakarta.xml.bind-api-2.3.2.jar:/usr/bin/../share/java/kafka/javassist-3.25.0-GA.jar:/usr/bin/../share/java/kafka/javassist-3.26.0-GA.jar:/usr/bin/../share/java/kafka/javax.servlet-api-3.1.0.jar:/usr/bin/../share/java/kafka/javax.ws.rs-api-2.1.1.jar:/usr/bin/../share/java/kafka/jaxb-api-2.3.0.jar:/usr/bin/../share/java/kafka/jersey-client-2.31.jar:/usr/bin/../share/java/kafka/jersey-common-2.31.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-2.31.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-core-2.31.jar:/usr/bin/../share/java/kafka/jersey-hk2-2.31.jar:/usr/bin/../share/java/kafka/jersey-media-jaxb-2.31.jar:/usr/bin/../share/java/kafka/jersey-server-2.31.jar:/usr/bin/../share/java/kafka/jetty-client-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jetty-continuation-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jetty-http-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jetty-io-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jetty-security-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jetty-server-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jetty-servlet-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jetty-servlets-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jetty-util-9.4.33.v20201020.jar:/usr/bin/../share/java/kafka/jopt-simple-5.0.4.jar:/usr/bin/../share/java/kafka/kafka-clients-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/kafka-log4j-appender-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/kafka-raft-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/kafka-streams-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/kafka-streams-examples-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/kafka-streams-scala_2.13-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/kafka-streams-test-utils-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/kafka-tools-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/kafka.jar:/usr/bin/../share/java/kafka/kafka_2.13-6.1.0-ccs-javadoc.jar:/usr/bin/../share/java/kafka/kafka_2.13-6.1.0-ccs-sources.jar:/usr/bin/../share/java/kafka/kafka_2.13-6.1.0-ccs-test-sources.jar:/usr/bin/../share/java/kafka/kafka_2.13-6.1.0-ccs-test.jar:/usr/bin/../share/java/kafka/kafka_2.13-6.1.0-ccs.jar:/usr/bin/../share/java/kafka/lz4-java-1.7.1.jar:/usr/bin/../share/java/kafka/maven-artifact-3.6.3.jar:/usr/bin/../share/java/kafka/metrics-core-2.2.0.jar:/usr/bin/../share/java/kafka/netty-buffer-4.1.51.Final.jar:/usr/bin/../share/java/kafka/netty-codec-4.1.51.Final.jar:/usr/bin/../share/java/kafka/netty-common-4.1.51.Final.jar:/usr/bin/../share/java/kafka/netty-handler-4.1.51.Final.jar:/usr/bin/../share/java/kafka/netty-resolver-4.1.51.Final.jar:/usr/bin/../share/java/kafka/netty-transport-4.1.51.Final.jar:/usr/bin/../share/java/kafka/netty-transport-native-epoll-4.1.51.Final.jar:/usr/bin/../share/java/kafka/netty-transport-native-unix-common-4.1.51.Final.jar:/usr/bin/../share/java/kafka/osgi-resource-locator-1.0.3.jar:/usr/bin/../share/java/kafka/paranamer-2.8.jar:/usr/bin/../share/java/kafka/plexus-utils-3.2.1.jar:/usr/bin/../share/java/kafka/reflections-0.9.12.jar:/usr/bin/../share/java/kafka/rocksdbjni-5.18.4.jar:/usr/bin/../share/java/kafka/scala-collection-compat_2.13-2.2.0.jar:/usr/bin/../share/java/kafka/scala-java8-compat_2.13-0.9.1.jar:/usr/bin/../share/java/kafka/scala-library-2.13.3.jar:/usr/bin/../share/java/kafka/scala-logging_2.13-3.9.2.jar:/usr/bin/../share/java/kafka/scala-reflect-2.13.3.jar:/usr/bin/../share/java/kafka/slf4j-api-1.7.30.jar:/usr/bin/../share/java/kafka/slf4j-log4j12-1.7.30.jar:/usr/bin/../share/java/kafka/snappy-java-1.1.7.7.jar:/usr/bin/../share/java/kafka/zookeeper-3.5.8.jar:/usr/bin/../share/java/kafka/zookeeper-jute-3.5.8.jar:/usr/bin/../share/java/kafka/zstd-jni-1.4.5-6.jar:/usr/bin/../share/java/confluent-telemetry/confluent-metrics-6.1.0-ce.jar (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:os.version=5.3.18-24.49-default (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:user.name=root (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:user.home=/root (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:user.dir=/home/appuser (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:os.memory.free=497MB (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:os.memory.max=512MB (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,177] INFO Client environment:os.memory.total=512MB (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,180] INFO Initiating client connection, connectString=dev-confluent-cp-zookeeper-headless:2181 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@736caf7a (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,185] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[2021-06-16 11:29:07,190] INFO zookeeper.request.timeout value is 0. feature enabled= (org.apache.zookeeper.ClientCnxn)
+[2021-06-16 11:29:07,192] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2021-06-16 11:29:07,198] INFO Opening socket connection to server dev-confluent-cp-zookeeper-headless/10.42.59.219:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2021-06-16 11:29:07,202] INFO Socket connection established, initiating session, client: /10.42.142.31:60506, server: dev-confluent-cp-zookeeper-headless/10.42.59.219:2181 (org.apache.zookeeper.ClientCnxn)
+[2021-06-16 11:29:07,213] INFO Session establishment complete on server dev-confluent-cp-zookeeper-headless/10.42.59.219:2181, sessionid = 0x10051fa7e100009, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)
+[2021-06-16 11:29:07,216] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2021-06-16 11:29:07,324] INFO [feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2021-06-16 11:29:07,490] INFO Updated cache from existing <empty> to latest FinalizedFeaturesAndEpoch(features=Features{}, epoch=0). (kafka.server.FinalizedFeatureCache)
+[2021-06-16 11:29:07,493] INFO Cluster ID = uhVmcon_QK6Bv43bUMe61Q (kafka.server.KafkaServer)
+[2021-06-16 11:29:07,539] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = PLAINTEXT://dev-confluent-cp-kafka-2.dev-confluent-cp-kafka-headless.dev-confluent-cluster:9092,EXTERNAL://10.0.204.18:31092
+	advertised.port = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 2
+	broker.id.generation.enable = true
+	broker.rack = null
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 2.7-IV2
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
+	listeners = PLAINTEXT://0.0.0.0:9092,EXTERNAL://0.0.0.0:31092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /opt/kafka/data-0/logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 2.7-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metric.reporters = [io.confluent.metrics.reporter.ConfluentMetricsReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 3
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.server.callback.handler.class = null
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = dev-confluent-cp-zookeeper-headless:2181
+	zookeeper.connection.timeout.ms = null
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2021-06-16 11:29:07,545] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = PLAINTEXT://dev-confluent-cp-kafka-2.dev-confluent-cp-kafka-headless.dev-confluent-cluster:9092,EXTERNAL://10.0.204.18:31092
+	advertised.port = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 2
+	broker.id.generation.enable = true
+	broker.rack = null
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 2.7-IV2
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
+	listeners = PLAINTEXT://0.0.0.0:9092,EXTERNAL://0.0.0.0:31092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /opt/kafka/data-0/logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 2.7-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metric.reporters = [io.confluent.metrics.reporter.ConfluentMetricsReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 3
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.server.callback.handler.class = null
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = dev-confluent-cp-zookeeper-headless:2181
+	zookeeper.connection.timeout.ms = null
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2021-06-16 11:29:07,576] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:07,577] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:07,578] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:07,579] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:07,614] INFO Loading logs from log dirs ArraySeq(/opt/kafka/data-0/logs) (kafka.log.LogManager)
+[2021-06-16 11:29:07,615] INFO Attempting recovery for all logs in /opt/kafka/data-0/logs since no clean shutdown file was found (kafka.log.LogManager)
+[2021-06-16 11:29:07,662] INFO [Log partition=_confluent-metrics-9, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15313 (kafka.log.Log)
+[2021-06-16 11:29:07,663] INFO [Log partition=_confluent-metrics-9, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15313 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,676] INFO [ProducerStateManager partition=_confluent-metrics-9] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-9/00000000000000015313.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,706] INFO [ProducerStateManager partition=_confluent-metrics-9] Writing producer snapshot at offset 15763 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,708] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,712] INFO [Log partition=__consumer_offsets-1, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,712] INFO [Log partition=__consumer_offsets-1, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,716] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-1/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,717] ERROR There was an error in one of the threads during logs loading: org.apache.kafka.common.errors.KafkaStorageException: Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-1/leader-epoch-checkpoint (kafka.log.LogManager)
+[2021-06-16 11:29:07,719] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-6, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,719] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-6, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,720] ERROR [KafkaServer id=2] Fatal error during KafkaServer startup. Prepare to shutdown (kafka.server.KafkaServer)
+org.apache.kafka.common.errors.KafkaStorageException: Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-1/leader-epoch-checkpoint
+Caused by: java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,720] INFO [KafkaServer id=2] shutting down (kafka.server.KafkaServer)
+[2021-06-16 11:29:07,721] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-6, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,722] INFO [feature-zk-node-event-process-thread]: Shutting down (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2021-06-16 11:29:07,722] INFO [feature-zk-node-event-process-thread]: Stopped (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2021-06-16 11:29:07,722] INFO [feature-zk-node-event-process-thread]: Shutdown completed (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2021-06-16 11:29:07,723] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
+[2021-06-16 11:29:07,728] INFO [Log partition=__consumer_offsets-31, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,728] INFO [Log partition=__consumer_offsets-31, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,729] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-31/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,730] INFO [Log partition=dev-confluent-cp-kafka-connect-status-3, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,731] INFO [Log partition=dev-confluent-cp-kafka-connect-status-3, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,732] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-status-3/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,733] INFO [Log partition=_schemas-0, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,733] INFO [Log partition=_schemas-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,734] INFO [Log partition=__consumer_offsets-48, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,734] INFO [Log partition=__consumer_offsets-48, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,735] INFO [Log partition=__consumer_offsets-48, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,738] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-9, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,738] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-9, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,738] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-9, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,741] INFO [Log partition=__consumer_offsets-32, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,741] INFO [Log partition=__consumer_offsets-32, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,742] INFO [Log partition=__consumer_offsets-32, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,744] INFO [Log partition=__consumer_offsets-9, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,744] INFO [Log partition=__consumer_offsets-9, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,745] INFO [Log partition=__consumer_offsets-9, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,747] INFO [Log partition=__consumer_offsets-35, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,747] INFO [Log partition=__consumer_offsets-35, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,748] INFO [Log partition=__consumer_offsets-35, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,750] INFO [Log partition=topic001-1, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,750] INFO [Log partition=topic001-1, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,752] INFO [Log partition=__consumer_offsets-44, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,752] INFO [Log partition=__consumer_offsets-44, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,753] INFO [Log partition=__consumer_offsets-44, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,755] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-15, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,755] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-15, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,756] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-15, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,758] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-21, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,759] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-21, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,759] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-21, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,762] INFO [Log partition=__consumer_offsets-4, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,762] INFO [Log partition=__consumer_offsets-4, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,763] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-4/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,764] INFO [Log partition=__consumer_offsets-46, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,764] INFO [Log partition=__consumer_offsets-46, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,765] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-46/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,766] INFO [Log partition=__consumer_offsets-33, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,766] INFO [Log partition=__consumer_offsets-33, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,767] INFO [Log partition=__consumer_offsets-33, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,770] INFO [Log partition=__consumer_offsets-25, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,770] INFO [Log partition=__consumer_offsets-25, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,771] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-25/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,772] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-16, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,772] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-16, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,773] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-16, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,775] INFO [Log partition=__consumer_offsets-0, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,775] INFO [Log partition=__consumer_offsets-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,775] INFO [Log partition=__consumer_offsets-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,777] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-10, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,778] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-10, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,778] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-10, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,780] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-22, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,780] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-22, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,781] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-22, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,785] INFO [Log partition=_confluent-metrics-6, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15351 (kafka.log.Log)
+[2021-06-16 11:29:07,785] INFO [Log partition=_confluent-metrics-6, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15351 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,785] INFO [ProducerStateManager partition=_confluent-metrics-6] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-6/00000000000000015351.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,792] INFO [ProducerStateManager partition=_confluent-metrics-6] Writing producer snapshot at offset 15803 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,793] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,794] INFO [Log partition=__consumer_offsets-18, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,794] INFO [Log partition=__consumer_offsets-18, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,795] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-24, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,795] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-24, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,796] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-24, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,798] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-3, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,798] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-3, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,799] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-3, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,801] INFO [Log partition=__consumer_offsets-2, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,801] INFO [Log partition=__consumer_offsets-2, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,802] INFO [Log partition=__consumer_offsets-2, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,804] INFO [Log partition=__consumer_offsets-36, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,804] INFO [Log partition=__consumer_offsets-36, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,814] INFO [Log partition=__consumer_offsets-36, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,819] INFO [Log partition=topic001-2, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,819] INFO [Log partition=topic001-2, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,820] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-0, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,821] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,821] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,825] INFO [Log partition=_confluent-metrics-3, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15270 (kafka.log.Log)
+[2021-06-16 11:29:07,825] INFO [Log partition=_confluent-metrics-3, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15270 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,825] INFO [ProducerStateManager partition=_confluent-metrics-3] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-3/00000000000000015270.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,830] INFO [ProducerStateManager partition=_confluent-metrics-3] Writing producer snapshot at offset 15668 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,830] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,831] INFO [Log partition=__consumer_offsets-38, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,831] INFO [Log partition=__consumer_offsets-38, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,832] INFO [Log partition=__consumer_offsets-38, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,834] INFO [Log partition=__consumer_offsets-34, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,834] INFO [Log partition=__consumer_offsets-34, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,835] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-34/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,836] INFO [Log partition=__consumer_offsets-11, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,836] INFO [Log partition=__consumer_offsets-11, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,836] INFO [Log partition=__consumer_offsets-11, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,836] INFO Session: 0x10051fa7e100009 closed (org.apache.zookeeper.ZooKeeper)
+[2021-06-16 11:29:07,836] INFO EventThread shut down for session: 0x10051fa7e100009 (org.apache.zookeeper.ClientCnxn)
+[2021-06-16 11:29:07,838] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
+[2021-06-16 11:29:07,838] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:07,840] INFO [Log partition=__consumer_offsets-49, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,840] INFO [Log partition=__consumer_offsets-49, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,841] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-49/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,842] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-5, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,842] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-5, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,843] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-offset-5/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,845] INFO [Log partition=_confluent-metrics-2, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15514 (kafka.log.Log)
+[2021-06-16 11:29:07,845] INFO [Log partition=_confluent-metrics-2, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15514 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,846] INFO [ProducerStateManager partition=_confluent-metrics-2] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-2/00000000000000015514.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,849] INFO [ProducerStateManager partition=_confluent-metrics-2] Writing producer snapshot at offset 15955 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,850] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,850] INFO [Log partition=__consumer_offsets-24, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,850] INFO [Log partition=__consumer_offsets-24, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,851] INFO [Log partition=__consumer_offsets-24, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,855] INFO [Log partition=_confluent-metrics-10, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15299 (kafka.log.Log)
+[2021-06-16 11:29:07,855] INFO [Log partition=_confluent-metrics-10, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15299 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,855] INFO [ProducerStateManager partition=_confluent-metrics-10] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-10/00000000000000015299.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,858] INFO [ProducerStateManager partition=_confluent-metrics-10] Writing producer snapshot at offset 15715 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,858] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,859] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-2, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,859] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-2, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,860] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-offset-2/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,861] INFO [Log partition=__consumer_offsets-14, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,861] INFO [Log partition=__consumer_offsets-14, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,862] INFO [Log partition=__consumer_offsets-14, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,864] INFO [Log partition=__consumer_offsets-37, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,864] INFO [Log partition=__consumer_offsets-37, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,865] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-37/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,866] INFO [Log partition=__consumer_offsets-29, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,866] INFO [Log partition=__consumer_offsets-29, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,867] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-7, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,867] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-7, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,867] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-7, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,869] INFO [Log partition=__consumer_offsets-13, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,869] INFO [Log partition=__consumer_offsets-13, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,870] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-13/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,871] INFO [Log partition=topic001-0, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,871] INFO [Log partition=topic001-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,872] INFO [Log partition=__consumer_offsets-10, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,872] INFO [Log partition=__consumer_offsets-10, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,873] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-10/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,874] INFO [Log partition=dev-confluent-cp-kafka-connect-status-2, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:07,874] INFO [Log partition=dev-confluent-cp-kafka-connect-status-2, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,874] INFO [Log partition=dev-confluent-cp-kafka-connect-status-2, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,877] INFO [Log partition=_confluent-metrics-8, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15252 (kafka.log.Log)
+[2021-06-16 11:29:07,878] INFO [Log partition=_confluent-metrics-8, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15252 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,878] INFO [ProducerStateManager partition=_confluent-metrics-8] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-8/00000000000000015252.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,880] INFO [ProducerStateManager partition=_confluent-metrics-8] Writing producer snapshot at offset 15660 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:07,881] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:07,883] INFO [Log partition=pageviews-0, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 219396283 (kafka.log.Log)
+[2021-06-16 11:29:07,883] INFO [Log partition=pageviews-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 219396283 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:07,883] INFO [ProducerStateManager partition=pageviews-0] Loading producer state from snapshot file '/opt/kafka/data-0/logs/pageviews-0/00000000000219396283.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,052] INFO [ProducerStateManager partition=pageviews-0] Writing producer snapshot at offset 223002856 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,055] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/pageviews-0/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromStart$3(LeaderEpochFileCache.scala:264)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromStart$1(LeaderEpochFileCache.scala:260)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromStart(LeaderEpochFileCache.scala:255)
+	at kafka.log.Log.$anonfun$new$2(Log.scala:310)
+	at kafka.log.Log.<init>(Log.scala:310)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,056] INFO [Log partition=__consumer_offsets-21, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,056] INFO [Log partition=__consumer_offsets-21, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,057] INFO [Log partition=__consumer_offsets-21, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,060] INFO [Log partition=_confluent-metrics-0, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15288 (kafka.log.Log)
+[2021-06-16 11:29:08,060] INFO [Log partition=_confluent-metrics-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15288 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,061] INFO [ProducerStateManager partition=_confluent-metrics-0] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-0/00000000000000015288.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,063] INFO [ProducerStateManager partition=_confluent-metrics-0] Writing producer snapshot at offset 15715 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,064] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/_confluent-metrics-0/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromStart$3(LeaderEpochFileCache.scala:264)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromStart$1(LeaderEpochFileCache.scala:260)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromStart(LeaderEpochFileCache.scala:255)
+	at kafka.log.Log.$anonfun$new$2(Log.scala:310)
+	at kafka.log.Log.<init>(Log.scala:310)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,066] INFO [Log partition=_confluent-metrics-4, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15415 (kafka.log.Log)
+[2021-06-16 11:29:08,066] INFO [Log partition=_confluent-metrics-4, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15415 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,066] INFO [ProducerStateManager partition=_confluent-metrics-4] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-4/00000000000000015415.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,068] INFO [ProducerStateManager partition=_confluent-metrics-4] Writing producer snapshot at offset 15845 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,069] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/_confluent-metrics-4/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromStart$3(LeaderEpochFileCache.scala:264)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromStart$1(LeaderEpochFileCache.scala:260)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromStart(LeaderEpochFileCache.scala:255)
+	at kafka.log.Log.$anonfun$new$2(Log.scala:310)
+	at kafka.log.Log.<init>(Log.scala:310)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,070] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-11, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,070] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-11, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,071] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-offset-11/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,071] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-4, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,071] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-4, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,072] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-4, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,074] INFO [Log partition=__consumer_offsets-20, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,074] INFO [Log partition=__consumer_offsets-20, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,074] INFO [Log partition=__consumer_offsets-20, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,076] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-20, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,076] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-20, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,077] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-offset-20/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,077] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-13, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,078] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-13, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,078] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-13, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,080] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-19, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,080] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-19, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,080] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-19, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,082] INFO [Log partition=_confluent-metrics-1, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15380 (kafka.log.Log)
+[2021-06-16 11:29:08,083] INFO [Log partition=_confluent-metrics-1, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15380 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,083] INFO [ProducerStateManager partition=_confluent-metrics-1] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-1/00000000000000015380.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,085] INFO [ProducerStateManager partition=_confluent-metrics-1] Writing producer snapshot at offset 15814 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,085] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,086] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-18, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,086] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-18, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,087] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-18, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,088] INFO [Log partition=__consumer_offsets-19, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,088] INFO [Log partition=__consumer_offsets-19, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,089] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-19/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,090] INFO [Log partition=__consumer_offsets-12, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,090] INFO [Log partition=__consumer_offsets-12, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,090] INFO [Log partition=__consumer_offsets-12, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,092] INFO [Log partition=dev-confluent-cp-kafka-connect-status-4, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,092] INFO [Log partition=dev-confluent-cp-kafka-connect-status-4, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,092] INFO [Log partition=dev-confluent-cp-kafka-connect-status-4, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,095] INFO [Log partition=_confluent-metrics-5, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15754 (kafka.log.Log)
+[2021-06-16 11:29:08,095] INFO [Log partition=_confluent-metrics-5, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15754 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,095] INFO [ProducerStateManager partition=_confluent-metrics-5] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-5/00000000000000015754.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,097] INFO [ProducerStateManager partition=_confluent-metrics-5] Writing producer snapshot at offset 16139 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,097] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,098] INFO [Log partition=__consumer_offsets-3, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,098] INFO [Log partition=__consumer_offsets-3, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,098] INFO [Log partition=__consumer_offsets-3, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,100] INFO [Log partition=__consumer_offsets-26, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,100] INFO [Log partition=__consumer_offsets-26, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,101] INFO [Log partition=__consumer_offsets-26, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,102] INFO [Log partition=__consumer_offsets-43, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,102] INFO [Log partition=__consumer_offsets-43, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,103] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-43/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,103] INFO [Log partition=__consumer_offsets-22, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,103] INFO [Log partition=__consumer_offsets-22, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,104] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-22/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,106] INFO [Log partition=_confluent-metrics-7, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15413 (kafka.log.Log)
+[2021-06-16 11:29:08,106] INFO [Log partition=_confluent-metrics-7, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15413 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,106] INFO [ProducerStateManager partition=_confluent-metrics-7] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-7/00000000000000015413.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,108] INFO [ProducerStateManager partition=_confluent-metrics-7] Writing producer snapshot at offset 15865 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,108] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,109] INFO [Log partition=__consumer_offsets-47, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,109] INFO [Log partition=__consumer_offsets-47, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,109] INFO [Log partition=__consumer_offsets-47, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,111] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-8, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,111] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-8, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,112] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-offset-8/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,112] INFO [Log partition=dev-confluent-cp-kafka-connect-config-0, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,112] INFO [Log partition=dev-confluent-cp-kafka-connect-config-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,113] INFO [ProducerStateManager partition=dev-confluent-cp-kafka-connect-config-0] Writing producer snapshot at offset 29 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,113] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,114] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-1, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,114] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-1, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,114] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-1, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,116] INFO [Log partition=dev-confluent-cp-kafka-connect-status-0, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,116] INFO [Log partition=dev-confluent-cp-kafka-connect-status-0, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,117] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-status-0/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,117] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-23, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,117] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-23, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,118] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-offset-23/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,119] INFO [Log partition=__consumer_offsets-16, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,119] INFO [Log partition=__consumer_offsets-16, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,119] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-16/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,120] INFO [Log partition=__consumer_offsets-45, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,120] INFO [Log partition=__consumer_offsets-45, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,121] INFO [Log partition=__consumer_offsets-45, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,122] INFO [Log partition=__consumer_offsets-39, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,122] INFO [Log partition=__consumer_offsets-39, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,123] INFO [Log partition=__consumer_offsets-39, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,124] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-17, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,124] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-17, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,124] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-offset-17/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,125] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-14, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,125] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-14, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,126] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/dev-confluent-cp-kafka-connect-offset-14/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,127] INFO [Log partition=__consumer_offsets-5, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,127] INFO [Log partition=__consumer_offsets-5, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,128] INFO [Log partition=__consumer_offsets-5, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,130] INFO [Log partition=__consumer_offsets-41, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,130] INFO [Log partition=__consumer_offsets-41, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,131] INFO [Log partition=__consumer_offsets-41, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,132] INFO [Log partition=__consumer_offsets-30, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,132] INFO [Log partition=__consumer_offsets-30, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,133] INFO [Log partition=__consumer_offsets-30, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,134] INFO [Log partition=__consumer_offsets-17, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,134] INFO [Log partition=__consumer_offsets-17, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,134] INFO [Log partition=__consumer_offsets-17, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,136] INFO [Log partition=__consumer_offsets-40, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,136] INFO [Log partition=__consumer_offsets-40, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,136] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-40/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,137] INFO [Log partition=__consumer_offsets-7, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,137] INFO [Log partition=__consumer_offsets-7, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,138] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-7/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,138] INFO [Log partition=__consumer_offsets-42, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,138] INFO [Log partition=__consumer_offsets-42, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,139] INFO [Log partition=__consumer_offsets-42, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,140] INFO [Log partition=__consumer_offsets-28, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,140] INFO [Log partition=__consumer_offsets-28, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,141] ERROR Error while writing to checkpoint file /opt/kafka/data-0/logs/__consumer_offsets-28/leader-epoch-checkpoint (kafka.server.LogDirFailureChannel)
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at kafka.server.checkpoints.CheckpointFile.liftedTree1$1(CheckpointFile.scala:108)
+	at kafka.server.checkpoints.CheckpointFile.write(CheckpointFile.scala:92)
+	at kafka.server.checkpoints.LeaderEpochCheckpointFile.write(LeaderEpochCheckpointFile.scala:70)
+	at kafka.server.epoch.LeaderEpochFileCache.flush(LeaderEpochFileCache.scala:292)
+	at kafka.server.epoch.LeaderEpochFileCache.$anonfun$truncateFromEnd$1(LeaderEpochFileCache.scala:238)
+	at kafka.server.epoch.LeaderEpochFileCache.truncateFromEnd(LeaderEpochFileCache.scala:235)
+	at kafka.log.Log.$anonfun$new$1(Log.scala:305)
+	at kafka.log.Log.<init>(Log.scala:305)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,143] INFO [Log partition=_confluent-metrics-11, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 15335 (kafka.log.Log)
+[2021-06-16 11:29:08,143] INFO [Log partition=_confluent-metrics-11, dir=/opt/kafka/data-0/logs] Loading producer state till offset 15335 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,143] INFO [ProducerStateManager partition=_confluent-metrics-11] Loading producer state from snapshot file '/opt/kafka/data-0/logs/_confluent-metrics-11/00000000000000015335.snapshot' (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,152] INFO [ProducerStateManager partition=_confluent-metrics-11] Writing producer snapshot at offset 15757 (kafka.log.ProducerStateManager)
+[2021-06-16 11:29:08,152] ERROR Error while loading log dir /opt/kafka/data-0/logs (kafka.log.LogManager)
+java.io.IOException: No space left on device
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at kafka.log.ProducerStateManager$.kafka$log$ProducerStateManager$$writeSnapshot(ProducerStateManager.scala:441)
+	at kafka.log.ProducerStateManager.takeSnapshot(ProducerStateManager.scala:661)
+	at kafka.log.Log.recoverSegment(Log.scala:678)
+	at kafka.log.Log.recoverLog(Log.scala:814)
+	at kafka.log.Log.$anonfun$loadSegments$3(Log.scala:750)
+	at scala.runtime.java8.JFunction0$mcJ$sp.apply(JFunction0$mcJ$sp.scala:17)
+	at kafka.log.Log.retryOnOffsetOverflow(Log.scala:2398)
+	at kafka.log.Log.loadSegments(Log.scala:750)
+	at kafka.log.Log.<init>(Log.scala:300)
+	at kafka.log.Log$.apply(Log.scala:2532)
+	at kafka.log.LogManager.loadLog(LogManager.scala:273)
+	at kafka.log.LogManager.$anonfun$loadLogs$12(LogManager.scala:352)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021-06-16 11:29:08,154] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-12, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,154] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-12, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,155] INFO [Log partition=dev-confluent-cp-kafka-connect-offset-12, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,156] INFO [Log partition=__consumer_offsets-27, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,157] INFO [Log partition=__consumer_offsets-27, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,157] INFO [Log partition=__consumer_offsets-27, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,159] INFO [Log partition=__consumer_offsets-15, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,159] INFO [Log partition=__consumer_offsets-15, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,160] INFO [Log partition=__consumer_offsets-15, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,162] INFO [Log partition=__consumer_offsets-8, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,162] INFO [Log partition=__consumer_offsets-8, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,164] INFO [Log partition=dev-confluent-cp-kafka-connect-status-1, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,164] INFO [Log partition=dev-confluent-cp-kafka-connect-status-1, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,165] INFO [Log partition=dev-confluent-cp-kafka-connect-status-1, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,167] INFO [Log partition=__consumer_offsets-6, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,167] INFO [Log partition=__consumer_offsets-6, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,168] INFO [Log partition=__consumer_offsets-6, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,169] INFO [Log partition=__consumer_offsets-23, dir=/opt/kafka/data-0/logs] Recovering unflushed segment 0 (kafka.log.Log)
+[2021-06-16 11:29:08,169] INFO [Log partition=__consumer_offsets-23, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,170] INFO [Log partition=__consumer_offsets-23, dir=/opt/kafka/data-0/logs] Loading producer state till offset 0 with message format version 2 (kafka.log.Log)
+[2021-06-16 11:29:08,577] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,577] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,577] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,577] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,577] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,577] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,578] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,578] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,578] INFO [ThrottledChannelReaper-ControllerMutation]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,579] INFO [ThrottledChannelReaper-ControllerMutation]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,579] INFO [ThrottledChannelReaper-ControllerMutation]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2021-06-16 11:29:08,580] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics)
+[2021-06-16 11:29:08,580] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics)
+[2021-06-16 11:29:08,580] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics)
+[2021-06-16 11:29:08,582] INFO Broker and topic stats closed (kafka.server.BrokerTopicStats)
+[2021-06-16 11:29:08,585] INFO App info kafka.server for 2 unregistered (org.apache.kafka.common.utils.AppInfoParser)
+[2021-06-16 11:29:08,586] INFO [KafkaServer id=2] shut down completed (kafka.server.KafkaServer)
+[2021-06-16 11:29:08,586] ERROR Exiting Kafka. (kafka.server.KafkaServerStartable)
+[2021-06-16 11:29:08,588] INFO [KafkaServer id=2] shutting down (kafka.server.KafkaServer)
